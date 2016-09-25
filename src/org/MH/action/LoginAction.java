@@ -1,5 +1,7 @@
 package org.MH.action;
 
+import javax.servlet.http.HttpServletRequest;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 import org.MH.dao.impl.*;
@@ -29,9 +31,10 @@ public class LoginAction extends ActionSupport{
 		this.password = password;
 	}
 	
-	public String login() throws Exception
+	public String login(HttpServletRequest request) throws Exception
 	{
-
+			System.out.println("login()");
+			System.out.println(request.getParameter("Email"));
 			return SUCCESS;
 
 	}

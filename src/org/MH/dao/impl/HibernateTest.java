@@ -19,8 +19,7 @@ public class HibernateTest extends HibernateDaoSupport {
 		super.transaction.commit();
 		System.out.println("±£´æ½áÊø");
 		super.session.close();
-		super.sf.close();
-		
+		super.sf.close();	
 	}
 
 }
