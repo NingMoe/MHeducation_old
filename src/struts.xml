@@ -1,0 +1,24 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+	<constant name="struts.custom.i18n.resources" value="mess"/>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+
+<!--     <package name="kig" namespace="/" extends="struts-default">
+        <action name="*">
+            <result >/WEB-INF/content/{1}.jsp</result>
+        </action>
+    </package> -->
+
+	<!-- 用户登陆类Action -->
+	<package name="kig" namespace="/"  extends="struts-default" >
+		<action name="login" class="org.MH.action.LoginAction" method="login">
+		<!-- 定义逻辑视图和物理资源之间的映射 -->
+		<result name="error">/WEB-INF/content/error.jsp</result>
+		<result name="success">/WEB-INF/content/welcome.jsp</result>
+		</action>
+	</package>
+</struts>
