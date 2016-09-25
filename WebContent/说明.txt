@@ -1,0 +1,6 @@
+WebContent文件夹下的
+Login PersonalCenter Welcome
+分别是登陆 个人中心 欢迎首页的完整工程，拥有自己的文件系统（css，js，images等等）
+
+而WebContent文件夹下的
+css fonts images js等等 是支持pages下的jsp页面而存在的

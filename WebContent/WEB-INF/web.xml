@@ -10,6 +10,6 @@
     <url-pattern>*.action</url-pattern>
   </filter-mapping>
   <welcome-file-list>
-    <welcome-file>/WEB-INF/content/welcome.jsp</welcome-file>
+    <welcome-file>/Welcome/welcome.html</welcome-file>
   </welcome-file-list>
 </web-app>

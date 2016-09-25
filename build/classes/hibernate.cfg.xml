@@ -1,0 +1,59 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		 <!-- 
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mini?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		
+		-->
+	 <!-- 
+	    <property name="hibernate.connection.url">jdbc:mysql://119.29.73.32:3306/mini?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+		
+	 
+		<property name="hibernate.connection.url">jdbc:mysql://10.66.124.241:3306/mini?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">yan820127@</property>
+		
+		
+	
+		<property name="hibernate.connection.url">jdbc:mysql://554afb8e4cf78.gz.cdb.myqcloud.com:8267/mini?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="hibernate.connection.username">cdb_outerroot</property>
+		<property name="hibernate.connection.password">yan820127@</property>
+		
+		
+	
+		-->
+<!-- 		<property name="hibernate.connection.url">jdbc:mysql://117.78.37.9:3306/mini?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">mini820127</property> -->
+		
+		<property name="hibernate.connection.url">jdbc:mysql://223.202.124.200:3306/MHeducation?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">rootRoot123,./</property>
+		
+		
+		
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="connection.autoReconnect">true</property>
+		<property name="hibernate.c3p0.timeout">10000</property>
+		<property name="hibernate.c3p0.min_size">3</property>
+		<property name="hibernate.c3p0.max_size">20</property>
+		<!-- 每隔120秒检查连接池里的空闲连接 ，单位是秒-->
+		<property name="hibernate.c3p0.idle_test_period">120</property>
+		<!-- 当连接池里面的连接用完的时候，C3P0一下获取的新的连接数 -->
+		<property name="hibernate.c3p0.acquire_increment">2</property>
+		<property name="hibernate.c3p0.maxIdleTime">5</property>
+		
+		<!--根据需要自动创建数据表 -->
+		<property name="hbm2ddl.auto">update</property>
+		<!-- 罗列所有持久化的类名	 -->	
+		<mapping class="org.MH.entity.News"/>
+	</session-factory>
+</hibernate-configuration>
